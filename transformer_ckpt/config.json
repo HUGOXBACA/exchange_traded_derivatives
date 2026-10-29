@@ -1,0 +1,53 @@
+{
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "architectures": [
+    "TimeSeriesTransformerForPrediction"
+  ],
+  "attention_dropout": 0.1,
+  "cardinality": [
+    25,
+    1,
+    1,
+    1,
+    1
+  ],
+  "context_length": 36,
+  "d_model": 128,
+  "decoder_attention_heads": 8,
+  "decoder_ffn_dim": 32,
+  "decoder_layerdrop": 0.1,
+  "decoder_layers": 4,
+  "distribution_output": "student_t",
+  "dropout": 0.1,
+  "dtype": "float32",
+  "embedding_dimension": [
+    12,
+    0,
+    0,
+    0,
+    0
+  ],
+  "encoder_attention_heads": 8,
+  "encoder_ffn_dim": 32,
+  "encoder_layerdrop": 0.1,
+  "encoder_layers": 4,
+  "feature_size": 16,
+  "init_std": 0.02,
+  "input_size": 1,
+  "is_encoder_decoder": true,
+  "lags_sequence": [
+    1
+  ],
+  "loss": "nll",
+  "model_type": "time_series_transformer",
+  "num_dynamic_real_features": 0,
+  "num_parallel_samples": 100,
+  "num_static_categorical_features": 5,
+  "num_static_real_features": 0,
+  "num_time_features": 1,
+  "prediction_length": 6,
+  "scaling": true,
+  "transformers_version": "5.20.2",
+  "use_cache": false
+}
